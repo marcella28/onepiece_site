@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(250, 205, 154);
+}
+
+.cabeçalho{
+    padding: 10px;
+    margin: 40px;
+    background-color: blanchedalmond;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+
+    
+}
+
+.title{
+    font-size: 30px;
+    position: relative;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content:center;
+    gap: 50px
+
+}
+
+.Um, .Dois , .Três{
+    background-color: blanchedalmond;
+    height: auto;
+    width: 400px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.rodapé{
+    background-color: rgb(233, 176, 91);
+    border-style: solid;
+    border-width: 1px;
+    height: 150px;
+    width: auto;
+}
+
+h2{
+    display: flex;
+    justify-content:center;
+}
+
+p{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.p1{
+    padding: 10px;
+}
+
+picture{
+    display: flex;
+    justify-content:center;
+}
+img{
+    height: 300px;
+    width: auto;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .Um{flex: 100%; height: auto;}
+    .Dois, .Três{flex: auto; height: auto; width: min-content;}
+}
+
+@media (max-width: 600px) {
+    .Um{flex: 100%;}
+    .Dois{flex: 100%;}
+    .Três{display: none;}
+
+}
+
+
